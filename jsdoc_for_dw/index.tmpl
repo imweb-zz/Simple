@@ -1,0 +1,27 @@
+<codehints xmlns:MMString="http://www.adobe.com/schemes/data/string/">
+  <menugroup MMString:name="Simple JS v1.0" id="CodeHints_Simple" version="1.1.0">
+    <description>
+ 		<MMString:loadString id="codehints_Simple" />
+    </description>
+
+	<for each="thisClass" in="data">					
+		<menu classpattern="{+thisClass.alias+}" casesensitive="false" additionaldismisschars=";" displayrestriction="JavaScript">
+			<if test="thisClass.alias == '$'">
+				<method pattern="$(id)" icon="shared/mm/images/hintFunction.png" constructor="true" retType="Object" /> 
+				<for each="subClass" in="data">	
+					<if test="subClass.alias != '$' && subClass.alias != '_global_'">
+						<property label="{+subClass.alias.split('.')[1]+}" static="true" icon="shared/mm/images/hintProperty.png" object="{+subClass.alias+}" propType="{+subClass.alias+}" />
+					</if>
+				</for>	
+			</if> 
+			{! var ownMethods = thisClass.methods.filter(function($){return $.memberOf == thisClass.alias  && !$.isNamespace}).sort(makeSortby("name")); !}
+			<if test="ownMethods.length">
+					<for each="member" in="ownMethods"> 
+						<method pattern="{+member.alias.split('.')[member.alias.split('.').length-1]+}{+makeSignature(member.params)+}" icon="shared/mm/images/hintFunction.png" static="true" object="{+thisClass.alias+}" retType="Object" />
+					</for>
+			</if>
+		</menu>
+	</for>	
+   
+  </menugroup>
+</codehints>

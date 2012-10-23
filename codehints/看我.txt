@@ -1,0 +1,2 @@
+把这个html放到D:\Program Files\Adobe\Adobe Dreamweaver CS5.5\configuration\CodeHints 目录就可以啦。
+注意：如果是cs5.5可能要在Edit-->preferances-->Code hints里把jQuery的去掉就可以。

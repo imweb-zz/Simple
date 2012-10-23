@@ -1,0 +1,305 @@
+﻿<codehints xmlns:MMString="http://www.adobe.com/schemes/data/string/">
+  <menugroup MMString:name="Simple JS v1.0" id="CodeHints_Simple" version="1.1.0">
+    <description>
+ 		<MMString:loadString id="codehints_Simple" />
+    </description>
+
+						
+		<menu classpattern="$" casesensitive="false" additionaldismisschars=";" displayrestriction="JavaScript">
+			
+				<method pattern="$(id)" icon="shared/mm/images/hintFunction.png" constructor="true" retType="Object" /> 
+					
+					
+					
+					
+						<property label="array" static="true" icon="shared/mm/images/hintProperty.png" object="$.array" propType="$.array" />
+					
+					
+					
+						<property label="bom" static="true" icon="shared/mm/images/hintProperty.png" object="$.bom" propType="$.bom" />
+					
+					
+					
+						<property label="cookie" static="true" icon="shared/mm/images/hintProperty.png" object="$.cookie" propType="$.cookie" />
+					
+					
+					
+						<property label="css" static="true" icon="shared/mm/images/hintProperty.png" object="$.css" propType="$.css" />
+					
+					
+					
+						<property label="dom" static="true" icon="shared/mm/images/hintProperty.png" object="$.dom" propType="$.dom" />
+					
+					
+					
+						<property label="e" static="true" icon="shared/mm/images/hintProperty.png" object="$.e" propType="$.e" />
+					
+					
+					
+						<property label="f" static="true" icon="shared/mm/images/hintProperty.png" object="$.f" propType="$.f" />
+					
+					
+					
+						<property label="http" static="true" icon="shared/mm/images/hintProperty.png" object="$.http" propType="$.http" />
+					
+					
+					
+						<property label="oop" static="true" icon="shared/mm/images/hintProperty.png" object="$.oop" propType="$.oop" />
+					
+					
+					
+						<property label="str" static="true" icon="shared/mm/images/hintProperty.png" object="$.str" propType="$.str" />
+					
+					
+					
+						<property label="winName" static="true" icon="shared/mm/images/hintProperty.png" object="$.winName" propType="$.winName" />
+					
+					
+					
+					
+			 
+			
+			
+					 
+						<method pattern="browser(name)" icon="shared/mm/images/hintFunction.png" static="true" object="$" retType="Object" />
+					 
+						<method pattern="get(url, para, cb, type)" icon="shared/mm/images/hintFunction.png" static="true" object="$" retType="Object" />
+					 
+						<method pattern="post(url, para, cb, type)" icon="shared/mm/images/hintFunction.png" static="true" object="$" retType="Object" />
+					 
+						<method pattern="set(obj, name, value)" icon="shared/mm/images/hintFunction.png" static="true" object="$" retType="Object" />
+					
+			
+		</menu>
+						
+		<menu classpattern="$.array" casesensitive="false" additionaldismisschars=";" displayrestriction="JavaScript">
+			 
+			
+			
+					 
+						<method pattern="del(array, index)" icon="shared/mm/images/hintFunction.png" static="true" object="$.array" retType="Object" />
+					 
+						<method pattern="grep(array, filter为过滤函数，若返回值为false，则将该元素删除，否则，保留该元素)" icon="shared/mm/images/hintFunction.png" static="true" object="$.array" retType="Object" />
+					 
+						<method pattern="indexOf(array, elem)" icon="shared/mm/images/hintFunction.png" static="true" object="$.array" retType="Object" />
+					
+			
+		</menu>
+						
+		<menu classpattern="$.bom" casesensitive="false" additionaldismisschars=";" displayrestriction="JavaScript">
+			 
+			
+			
+					 
+						<method pattern="getHash(n)" icon="shared/mm/images/hintFunction.png" static="true" object="$.bom" retType="Object" />
+					 
+						<method pattern="query(n)" icon="shared/mm/images/hintFunction.png" static="true" object="$.bom" retType="Object" />
+					
+			
+		</menu>
+						
+		<menu classpattern="$.cookie" casesensitive="false" additionaldismisschars=";" displayrestriction="JavaScript">
+			 
+			
+			
+					 
+						<method pattern="clear()" icon="shared/mm/images/hintFunction.png" static="true" object="$.cookie" retType="Object" />
+					 
+						<method pattern="del(name, domain, path)" icon="shared/mm/images/hintFunction.png" static="true" object="$.cookie" retType="Object" />
+					 
+						<method pattern="get(n)" icon="shared/mm/images/hintFunction.png" static="true" object="$.cookie" retType="Object" />
+					 
+						<method pattern="set(name, value, domain, path, hour)" icon="shared/mm/images/hintFunction.png" static="true" object="$.cookie" retType="Object" />
+					 
+						<method pattern="uin()" icon="shared/mm/images/hintFunction.png" static="true" object="$.cookie" retType="Object" />
+					
+			
+		</menu>
+						
+		<menu classpattern="$.css" casesensitive="false" additionaldismisschars=";" displayrestriction="JavaScript">
+			 
+			
+			
+					 
+						<method pattern="addClass(obj, n=名称)" icon="shared/mm/images/hintFunction.png" static="true" object="$.css" retType="Object" />
+					 
+						<method pattern="getBodyHeight()" icon="shared/mm/images/hintFunction.png" static="true" object="$.css" retType="Object" />
+					 
+						<method pattern="getBodyWidth()" icon="shared/mm/images/hintFunction.png" static="true" object="$.css" retType="Object" />
+					 
+						<method pattern="getClientHeight(node)" icon="shared/mm/images/hintFunction.png" static="true" object="$.css" retType="Object" />
+					 
+						<method pattern="getClientWidth(node)" icon="shared/mm/images/hintFunction.png" static="true" object="$.css" retType="Object" />
+					 
+						<method pattern="getComputedStyle(node, prop)" icon="shared/mm/images/hintFunction.png" static="true" object="$.css" retType="Object" />
+					 
+						<method pattern="getHeight(node)" icon="shared/mm/images/hintFunction.png" static="true" object="$.css" retType="Object" />
+					 
+						<method pattern="getOffsetPosition(node)" icon="shared/mm/images/hintFunction.png" static="true" object="$.css" retType="Object" />
+					 
+						<method pattern="getOriginalStyle(node, prop)" icon="shared/mm/images/hintFunction.png" static="true" object="$.css" retType="Object" />
+					 
+						<method pattern="getPageHeight()" icon="shared/mm/images/hintFunction.png" static="true" object="$.css" retType="Object" />
+					 
+						<method pattern="getPageScrollLeft()" icon="shared/mm/images/hintFunction.png" static="true" object="$.css" retType="Object" />
+					 
+						<method pattern="getPageScrollTop()" icon="shared/mm/images/hintFunction.png" static="true" object="$.css" retType="Object" />
+					 
+						<method pattern="getPageWidth()" icon="shared/mm/images/hintFunction.png" static="true" object="$.css" retType="Object" />
+					 
+						<method pattern="getPointerPosition(e)" icon="shared/mm/images/hintFunction.png" static="true" object="$.css" retType="Object" />
+					 
+						<method pattern="getWidth(node)" icon="shared/mm/images/hintFunction.png" static="true" object="$.css" retType="Object" />
+					 
+						<method pattern="hasClass(obj, n)" icon="shared/mm/images/hintFunction.png" static="true" object="$.css" retType="Object" />
+					 
+						<method pattern="hide(element)" icon="shared/mm/images/hintFunction.png" static="true" object="$.css" retType="Object" />
+					 
+						<method pattern="isShow(element)" icon="shared/mm/images/hintFunction.png" static="true" object="$.css" retType="Object" />
+					 
+						<method pattern="removeClass(obj, n=名称)" icon="shared/mm/images/hintFunction.png" static="true" object="$.css" retType="Object" />
+					 
+						<method pattern="setClass(obj, 要设置的样式)" icon="shared/mm/images/hintFunction.png" static="true" object="$.css" retType="Object" />
+					 
+						<method pattern="setStyle(node, props, value)" icon="shared/mm/images/hintFunction.png" static="true" object="$.css" retType="Object" />
+					 
+						<method pattern="show(element)" icon="shared/mm/images/hintFunction.png" static="true" object="$.css" retType="Object" />
+					 
+						<method pattern="updateClass(obj, addClass, removeClass,)" icon="shared/mm/images/hintFunction.png" static="true" object="$.css" retType="Object" />
+					
+			
+		</menu>
+						
+		<menu classpattern="$.dom" casesensitive="false" additionaldismisschars=";" displayrestriction="JavaScript">
+			 
+			
+			
+					 
+						<method pattern="getNode(tagName, cfg)" icon="shared/mm/images/hintFunction.png" static="true" object="$.dom" retType="Object" />
+					 
+						<method pattern="queryClass(className, tagName, container)" icon="shared/mm/images/hintFunction.png" static="true" object="$.dom" retType="Object" />
+					 
+						<method pattern="queryClassAll(className, tagName, container)" icon="shared/mm/images/hintFunction.png" static="true" object="$.dom" retType="Object" />
+					 
+						<method pattern="remove(id)" icon="shared/mm/images/hintFunction.png" static="true" object="$.dom" retType="Object" />
+					
+			
+		</menu>
+						
+		<menu classpattern="$.e" casesensitive="false" additionaldismisschars=";" displayrestriction="JavaScript">
+			 
+			
+			
+					 
+						<method pattern="add(element, eventType, handler)" icon="shared/mm/images/hintFunction.png" static="true" object="$.e" retType="Object" />
+					 
+						<method pattern="remove(element, eventType, handler)" icon="shared/mm/images/hintFunction.png" static="true" object="$.e" retType="Object" />
+					 
+						<method pattern="src(e)" icon="shared/mm/images/hintFunction.png" static="true" object="$.e" retType="Object" />
+					 
+						<method pattern="stopPropagation(e)" icon="shared/mm/images/hintFunction.png" static="true" object="$.e" retType="Object" />
+					 
+						<method pattern="trigger(element, eventType)" icon="shared/mm/images/hintFunction.png" static="true" object="$.e" retType="Object" />
+					
+			
+		</menu>
+						
+		<menu classpattern="$.f" casesensitive="false" additionaldismisschars=";" displayrestriction="JavaScript">
+			 
+			
+			
+					 
+						<method pattern="add(arg1, arg2)" icon="shared/mm/images/hintFunction.png" static="true" object="$.f" retType="Object" />
+					 
+						<method pattern="div(arg1, arg2)" icon="shared/mm/images/hintFunction.png" static="true" object="$.f" retType="Object" />
+					 
+						<method pattern="mul(arg1, arg2)" icon="shared/mm/images/hintFunction.png" static="true" object="$.f" retType="Object" />
+					 
+						<method pattern="sub(arg1, arg2)" icon="shared/mm/images/hintFunction.png" static="true" object="$.f" retType="Object" />
+					
+			
+		</menu>
+						
+		<menu classpattern="$.http" casesensitive="false" additionaldismisschars=";" displayrestriction="JavaScript">
+			 
+			
+			
+					 
+						<method pattern="ajax(url, para, cb, method, type)" icon="shared/mm/images/hintFunction.png" static="true" object="$.http" retType="Object" />
+					 
+						<method pattern="get(url, para, cb, type)" icon="shared/mm/images/hintFunction.png" static="true" object="$.http" retType="Object" />
+					 
+						<method pattern="getXHR()" icon="shared/mm/images/hintFunction.png" static="true" object="$.http" retType="Object" />
+					 
+						<method pattern="jsonp(url)" icon="shared/mm/images/hintFunction.png" static="true" object="$.http" retType="Object" />
+					 
+						<method pattern="loadScript(src, callback)" icon="shared/mm/images/hintFunction.png" static="true" object="$.http" retType="Object" />
+					 
+						<method pattern="post(url, para, cb, type)" icon="shared/mm/images/hintFunction.png" static="true" object="$.http" retType="Object" />
+					 
+						<method pattern="preload(url)" icon="shared/mm/images/hintFunction.png" static="true" object="$.http" retType="Object" />
+					
+			
+		</menu>
+						
+		<menu classpattern="$.oop" casesensitive="false" additionaldismisschars=";" displayrestriction="JavaScript">
+			 
+			
+			
+					 
+						<method pattern="addObserver(target, e, cbk)" icon="shared/mm/images/hintFunction.png" static="true" object="$.oop" retType="Object" />
+					 
+						<method pattern="Class(extendCfg, argObj)" icon="shared/mm/images/hintFunction.png" static="true" object="$.oop" retType="Object" />
+					 
+						<method pattern="extend(baseObj, override_objs)" icon="shared/mm/images/hintFunction.png" static="true" object="$.oop" retType="Object" />
+					 
+						<method pattern="notifyObservers(target, e, param)" icon="shared/mm/images/hintFunction.png" static="true" object="$.oop" retType="Object" />
+					 
+						<method pattern="removeObserver(target, e, cbk)" icon="shared/mm/images/hintFunction.png" static="true" object="$.oop" retType="Object" />
+					
+			
+		</menu>
+						
+		<menu classpattern="$.str" casesensitive="false" additionaldismisschars=";" displayrestriction="JavaScript">
+			 
+			
+			
+					 
+						<method pattern="byteLen(str, len)" icon="shared/mm/images/hintFunction.png" static="true" object="$.str" retType="Object" />
+					 
+						<method pattern="formatDate(pattern, date)" icon="shared/mm/images/hintFunction.png" static="true" object="$.str" retType="Object" />
+					 
+						<method pattern="leftPad(input, width, filler)" icon="shared/mm/images/hintFunction.png" static="true" object="$.str" retType="Object" />
+					 
+						<method pattern="reverse(str)" icon="shared/mm/images/hintFunction.png" static="true" object="$.str" retType="Object" />
+					 
+						<method pattern="trim(str)" icon="shared/mm/images/hintFunction.png" static="true" object="$.str" retType="Object" />
+					
+			
+		</menu>
+						
+		<menu classpattern="$.winName" casesensitive="false" additionaldismisschars=";" displayrestriction="JavaScript">
+			 
+			
+			
+					 
+						<method pattern="clear()" icon="shared/mm/images/hintFunction.png" static="true" object="$.winName" retType="Object" />
+					 
+						<method pattern="get(n)" icon="shared/mm/images/hintFunction.png" static="true" object="$.winName" retType="Object" />
+					 
+						<method pattern="remove(n)" icon="shared/mm/images/hintFunction.png" static="true" object="$.winName" retType="Object" />
+					 
+						<method pattern="set(n, v)" icon="shared/mm/images/hintFunction.png" static="true" object="$.winName" retType="Object" />
+					
+			
+		</menu>
+						
+		<menu classpattern="_global_" casesensitive="false" additionaldismisschars=";" displayrestriction="JavaScript">
+			 
+			
+			
+		</menu>
+		
+   
+  </menugroup>
+</codehints>

@@ -1,0 +1,653 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="generator" content="JsDoc Toolkit" />
+		
+		<title>JsDoc Reference - $.oop</title>
+
+		<style type="text/css">
+			/* default.css */
+body
+{
+	font: 12px "Lucida Grande", Tahoma, Arial, Helvetica, sans-serif;
+	width: 800px;
+}
+
+.header
+{
+	clear: both;
+	background-color: #ccc;
+	padding: 8px;
+}
+
+h1
+{
+	font-size: 150%;
+	font-weight: bold;
+	padding: 0;
+	margin: 1em 0 0 .3em;
+}
+
+hr
+{
+	border: none 0;
+	border-top: 1px solid #7F8FB1;
+	height: 1px;
+}
+
+pre.code
+{
+	display: block;
+	padding: 8px;
+	border: 1px dashed #ccc;
+}
+
+#index
+{
+	margin-top: 24px;
+	float: left;
+	width: 160px;
+	position: absolute;
+	left: 8px;
+	background-color: #F3F3F3;
+	padding: 8px;
+}
+
+#content
+{
+	margin-left: 190px;
+	width: 600px;
+}
+
+.classList
+{
+	list-style-type: none;
+	padding: 0;
+	margin: 0 0 0 8px;
+	font-family: arial, sans-serif;
+	font-size: 1em;
+	overflow: auto;
+}
+
+.classList li
+{
+	padding: 0;
+	margin: 0 0 8px 0;
+}
+
+.summaryTable { width: 100%; }
+
+h1.classTitle
+{
+	font-size:170%;
+	line-height:130%;
+}
+
+h2 { font-size: 110%; }
+caption, div.sectionTitle
+{
+	background-color: #7F8FB1;
+	color: #fff;
+	font-size:130%;
+	text-align: left;
+	padding: 2px 6px 2px 6px;
+	border: 1px #7F8FB1 solid;
+}
+
+div.sectionTitle { margin-bottom: 8px; }
+.summaryTable thead { display: none; }
+
+.summaryTable td
+{
+	vertical-align: top;
+	padding: 4px;
+	border-bottom: 1px #7F8FB1 solid;
+	border-right: 1px #7F8FB1 solid;
+}
+
+/*col#summaryAttributes {}*/
+.summaryTable td.attributes
+{
+	border-left: 1px #7F8FB1 solid;
+	width: 140px;
+	text-align: right;
+}
+
+td.attributes, .fixedFont
+{
+	line-height: 15px;
+	color: #002EBE;
+	font-family: "Courier New",Courier,monospace;
+	font-size: 13px;
+}
+
+.summaryTable td.nameDescription
+{
+	text-align: left;
+	font-size: 13px;
+	line-height: 15px;
+}
+
+.summaryTable td.nameDescription, .description
+{
+	line-height: 15px;
+	padding: 4px;
+	padding-left: 4px;
+}
+
+.summaryTable { margin-bottom: 8px; }
+
+ul.inheritsList
+{
+	list-style: square;
+	margin-left: 20px;
+	padding-left: 0;
+}
+
+.detailList {
+	margin-left: 20px; 
+	line-height: 15px;
+}
+.detailList dt { margin-left: 20px; }
+
+.detailList .heading
+{
+	font-weight: bold;
+	padding-bottom: 6px;
+	margin-left: 0;
+}
+
+.light, td.attributes, .light a:link, .light a:visited
+{
+	color: #777;
+	font-style: italic;
+}
+
+.fineprint
+{
+	text-align: right;
+	font-size: 10px;
+}
+		</style>
+	</head>
+
+	<body>
+<!-- ============================== header ================================= -->	
+		<!-- begin static/header.html -->
+		<div id="header">
+</div>
+		<!-- end static/header.html -->
+
+<!-- ============================== classes index ============================ -->
+		<div id="index">
+			<!-- begin publish.classesIndex -->
+			<div align="center"><a href="../index.html">Class Index</a>
+| <a href="../files.html">File Index</a></div>
+<hr />
+<h2>Classes</h2>
+<ul class="classList">
+	
+	<li><a href="../symbols/%24.html">$</a></li>
+	
+	<li><a href="../symbols/%24.array.html">$.array</a></li>
+	
+	<li><a href="../symbols/%24.bom.html">$.bom</a></li>
+	
+	<li><a href="../symbols/%24.cookie.html">$.cookie</a></li>
+	
+	<li><a href="../symbols/%24.css.html">$.css</a></li>
+	
+	<li><a href="../symbols/%24.dom.html">$.dom</a></li>
+	
+	<li><a href="../symbols/%24.e.html">$.e</a></li>
+	
+	<li><a href="../symbols/%24.f.html">$.f</a></li>
+	
+	<li><a href="../symbols/%24.http.html">$.http</a></li>
+	
+	<li><a href="../symbols/%24.oop.html">$.oop</a></li>
+	
+	<li><a href="../symbols/%24.str.html">$.str</a></li>
+	
+	<li><a href="../symbols/%24.winName.html">$.winName</a></li>
+	
+	<li><i><a href="../symbols/_global_.html">_global_</a></i></li>
+	
+</ul>
+<hr />
+			<!-- end publish.classesIndex -->
+		</div>
+		
+		<div id="content">
+<!-- ============================== class title ============================ -->
+			<h1 class="classTitle">
+				
+				Class $.oop
+			</h1>
+
+<!-- ============================== class summary ========================== -->			
+			<p class="description">
+				
+				
+			
+				
+				
+				
+					<br /><i>Defined in: </i> <a href="../symbols/src/f__SVN_quan_proj_trunk_htdocs_js_simple.js.html">simple.js</a>.
+				
+			</p>
+
+<!-- ============================== constructor summary ==================== -->			
+			
+			<table class="summaryTable" cellspacing="0" summary="A summary of the constructor documented in the class $.oop.">
+				<caption>Class Summary</caption>
+				<thead>
+					<tr>
+						<th scope="col">Constructor Attributes</th>
+						<th scope="col">Constructor Name and Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="attributes">&nbsp;</td>
+						<td class="nameDescription" >
+							<div class="fixedFont">
+								<b><a href="../symbols/%24.oop.html#constructor">$.oop</a></b>()
+							</div>
+							<div class="description">面向对象相关方法(类,继承,观察者.</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			
+
+<!-- ============================== properties summary ===================== -->
+			
+
+<!-- ============================== methods summary ======================== -->
+			
+				
+				
+				<table class="summaryTable" cellspacing="0" summary="A summary of the methods documented in the class $.oop.">
+					<caption>Method Summary</caption>
+					<thead>
+						<tr>
+							<th scope="col">Method Attributes</th>
+							<th scope="col">Method Name and Description</th>
+						</tr>
+					</thead>
+					<tbody>
+					
+						<tr>
+							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">$.oop.<b><a href="../symbols/%24.oop.html#.addObserver">addObserver</a></b>(target, e, cbk)
+								</div>
+								<div class="description">添加关注.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">$.oop.<b><a href="../symbols/%24.oop.html#.Class">Class</a></b>(extendCfg, argObj)
+								</div>
+								<div class="description">创建类</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">$.oop.<b><a href="../symbols/%24.oop.html#.extend">extend</a></b>(baseObj, override_objs)
+								</div>
+								<div class="description">继承</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">$.oop.<b><a href="../symbols/%24.oop.html#.notifyObservers">notifyObservers</a></b>(target, e, param)
+								</div>
+								<div class="description">通知关注者们,某被观察对象的某行为发生.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">$.oop.<b><a href="../symbols/%24.oop.html#.removeObserver">removeObserver</a></b>(target, e, cbk)
+								</div>
+								<div class="description">移除关注.</div>
+							</td>
+						</tr>
+					
+					</tbody>
+				</table>
+				
+				
+				
+			
+<!-- ============================== events summary ======================== -->
+			
+
+<!-- ============================== constructor details ==================== -->		
+			
+			<div class="details"><a name="constructor"> </a>
+				<div class="sectionTitle">
+					Class Detail
+				</div>
+				
+				<div class="fixedFont">
+						<b>$.oop</b>()
+				</div>
+				
+				<div class="description">
+					面向对象相关方法(类,继承,观察者...)
+					<br /><i>Author: </i>knightli.
+				</div>
+				
+				
+				
+				
+					
+					
+					
+					
+					
+					
+					
+
+			</div>
+			
+
+<!-- ============================== field details ========================== -->		
+			
+
+<!-- ============================== method details ========================= -->		
+			
+				<div class="sectionTitle">
+					Method Detail
+				</div>
+				
+					<a name=".addObserver"> </a>
+					<div class="fixedFont">&lt;static&gt; 
+					
+					
+					<span class="light">$.oop.</span><b>addObserver</b>(target, e, cbk)
+					
+					</div>
+					<div class="description">
+						添加关注. 用于关注某对象的某事件,并在触发时引发参数给定的回调
+						
+						
+					</div>
+					
+					
+					
+					<pre class="code">		待补充</pre>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Object}</span> <b>target</b>
+									
+								</dt>
+								<dd>被观察对象</dd>
+							
+								<dt>
+									<span class="light fixedFont">{String}</span> <b>e</b>
+									
+								</dt>
+								<dd>被观察事件名称, 表明要观察对象的哪个行为</dd>
+							
+								<dt>
+									<span class="light fixedFont">{Function}</span> <b>cbk</b>
+									
+								</dt>
+								<dd>回调函数. 当被观察对象的上述行为触发时(一般由被观察对象通过notifyObservers触发),引发的回调函数</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name=".Class"> </a>
+					<div class="fixedFont">&lt;static&gt; 
+					
+					<span class="light">{String}</span>
+					<span class="light">$.oop.</span><b>Class</b>(extendCfg, argObj)
+					
+					</div>
+					<div class="description">
+						创建类
+						
+						
+					</div>
+					
+					
+					
+					<pre class="code">		见note</pre>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Object}</span> <b>extendCfg</b>
+									<i>Optional</i>
+								</dt>
+								<dd>可选参数, 传送该参数时,说明创建的这个类是某个类的子类.             extendCfg格式: {extend: superObj} 或者 {extend: superClass}</dd>
+							
+								<dt>
+									<span class="light fixedFont">{Object}</span> <b>argObj</b>
+									
+								</dt>
+								<dd>要创建的类的对象原型. 其中包含的属性和方法将成为该类的原型属性和原型方法</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{String}</span> 创建的Class</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name=".extend"> </a>
+					<div class="fixedFont">&lt;static&gt; 
+					
+					<span class="light">{String}</span>
+					<span class="light">$.oop.</span><b>extend</b>(baseObj, override_objs)
+					
+					</div>
+					<div class="description">
+						继承
+						
+						
+					</div>
+					
+					
+					
+					<pre class="code">		例1:			$.oop.extend({prop1:"prop1-value", prop2:"prop2-value"});		例2:			var myObj = $.oop.extend({}, baseObj, {prop1:"prop1-value", prop2:"prop2-value"}, {func1:function(){},fucn2:function(){}});		例3:			var myObj = {myprop1:"prop1-value", myfunc1:function(){}};			myObj = $.oop.extend(myObj, baseObj, {prop1:"prop1-value", prop2:"prop2-value"}, {func1:function(){},fucn2:function(){}});</pre>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Object}</span> <b>baseObj</b>
+									
+								</dt>
+								<dd>基础对象</dd>
+							
+								<dt>
+									<span class="light fixedFont">{Object}</span> <b>override_objs</b>
+									
+								</dt>
+								<dd>覆盖对象,可有多个该参数跟在第一个参数后面, 用来覆盖第一个参数的基础对象中的一些属性</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{String}</span> 继承后的对象</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name=".notifyObservers"> </a>
+					<div class="fixedFont">&lt;static&gt; 
+					
+					
+					<span class="light">$.oop.</span><b>notifyObservers</b>(target, e, param)
+					
+					</div>
+					<div class="description">
+						通知关注者们,某被观察对象的某行为发生. 用于触发关注者们自己设置的一些回调函数
+						
+						
+					</div>
+					
+					
+					
+					<pre class="code">		待补充</pre>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Object}</span> <b>target</b>
+									
+								</dt>
+								<dd>发生行为触发事件的对象</dd>
+							
+								<dt>
+									<span class="light fixedFont">{String}</span> <b>e</b>
+									
+								</dt>
+								<dd>发生行为对应的事件名称. 这个值应该和添加关注时设置的事件名称保持一致,才能正确触发回调</dd>
+							
+								<dt>
+									<span class="light fixedFont">{Object}</span> <b>param</b>
+									
+								</dt>
+								<dd>参数. 引发回调函数的输入参数</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name=".removeObserver"> </a>
+					<div class="fixedFont">&lt;static&gt; 
+					
+					
+					<span class="light">$.oop.</span><b>removeObserver</b>(target, e, cbk)
+					
+					</div>
+					<div class="description">
+						移除关注. 根据传入的参数, 将对应的关注从目标对象的关注列表上移除
+						
+						
+					</div>
+					
+					
+					
+					<pre class="code">		待补充</pre>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Object}</span> <b>target</b>
+									
+								</dt>
+								<dd>被观察对象</dd>
+							
+								<dt>
+									<span class="light fixedFont">{String}</span> <b>e</b>
+									
+								</dt>
+								<dd>被观察事件名称, 表明要观察对象的哪个行为</dd>
+							
+								<dt>
+									<span class="light fixedFont">{Function}</span> <b>cbk</b>
+									
+								</dt>
+								<dd>回调函数.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					
+				
+			
+			
+<!-- ============================== event details ========================= -->		
+			
+			
+			<hr />
+		</div>
+
+		
+<!-- ============================== footer ================================= -->
+		<div class="fineprint" style="clear:both">
+			
+			Documentation generated by <a href="http://code.google.com/p/jsdoc-toolkit/" target="_blank">JsDoc Toolkit</a> 2.4.0 on Sat Dec 31 2011 13:35:47 GMT+0800 (CST)
+		</div>
+	</body>
+</html>

@@ -1,0 +1,298 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>css相关</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<style type="text/css">
+.wrap_container{padding-left: 10px; }
+.wrap_container h1{ text-align: center; font-size: 36px; padding: 20px 0; }
+
+.desc{ margin-bottom: 10px;}
+.desc ol{ background: #eee; padding: 5px; margin-left: 10px;}
+.box{ border-top: 1px solid #ddd; margin-bottom: 10px; }
+.getWidth{ width: 800px; height: 120px; padding: 10px; margin: 10px; border: 5px solid #333;  background: #ccc; overflow: hidden;}
+
+.box h3{ padding: 5px 0; background: #ddd; text-indent: 10px; margin-bottom: 10px; border-left: 5px solid #333;}
+.out{ width: 110px; height: 110px;}
+.hideShowDiv{ width: 100px; height: 100px; border: 2px solid #ccc; background: orange; }
+
+.red{ color: red; }
+.blue{ color:blue; }
+</style>
+</head>
+
+<body>
+<div class="wrap_container">
+<h1>simple.js CSS部分测试用例</h1>
+<div class="desc">
+	<h4>测试用例简单描述</h4>
+	<ol>
+		<li>$.css（修改前）、$.CSS（修改后）</li>
+		<li>#num 为测试用例编号</li>
+		<li><span class="red">红色字</span>：标题，<span class="blue">蓝色字</span>：输出结果</li>
+	</ol>
+</div>
+<div id="wh" class="box">
+	<h3>#1 $.css.getWidth(node) - $.css.getClientWidth(node) 以及 $.css.getHeight(node) - $.css.getClientHeight(node)</h3>
+	<div id="whd" class="getWidth">
+		<p>width: 800px</p>
+		<p>height: 120px</p>
+		<p>padding: 10px</p>
+		<p>margin: 10px</p>
+		<p>border: 5px solid #333</p>
+	</div>
+	<p id="whr" class="result"></p>
+</div>
+<div class="box">
+	<h3>#2 $.css.show 以及 $.css.hide</h3>
+	<div class="out">
+		<div class="hideShowDiv" id="hideShowDiv">请猛点击！</div>
+	</div>
+	
+	<button id="hideShowBtn">点击显示/隐藏</button>
+	<p class="result">$.css.isShown: <span id="hideShowResult"></span></p>
+</div>
+
+<div class="box">
+	<h3>#3 $.css.getStyle : font-size单位不为px时候，获取字体大小</h3>
+	<div class="font_px">
+		<p class="font_em" id="font_em">测试字体大小用的：敢来量下我的font-size吗</p>
+	</div>
+	<p class="result" id="font_em_p" class="result"></p>
+</div>
+
+<div class="box">
+	<h3>#4 $.css.getWidth( node ) : 宽度为auto</h3>
+	<div class="auto_width" id="a_w">宽度：auto</div>
+	<p id="a_w_p" class="result"></p>
+</div>
+
+<div class="box">
+	<h3>#5 $.css.getHeight( node ) : 高度为auto</h3>
+	<div class="auto_height_container">
+		<div class="auto_height" id="a_h">高度：auto</div>
+	</div>
+	<p id="a_h_p" class="result"></p>
+</div>
+
+<div class="box">
+	<h3>#6 $.css.getStyle( node, 'margin-right' ) : margin为auto</h3>
+	<div class="margin_auto" id="m_a"></div>
+	<p id="m_a_p" class="result"></p>
+</div>
+
+<div class="box">
+	<h3>#7 $.css.getComputedStyle( node, 'opacity' ) vs $.CSS.getStyle( node, 'opacity') : 获取opacity</h3>
+	<div class="get_opacity" id="g_o">我的透明度为30%</div>
+	<p id="g_o_p" class="result"></p>
+</div>
+
+
+<div class="box">
+	<h3>#8 $.css.setStyle( node, 'opacity' ) vs $.CSS.setStyle( node, 'opacity' ): 设置opacity</h3>
+	<div class="set_opacity" id="old_s_o">我被$.css设置了30%的透明度</div>
+	<div class="set_opacity" id="new_s_o">我被$.CSS设置了30%的透明度</div>
+	<div class="set_opacity rotate_filter" id="old_s_o_f">我被$.css设置了30%的透明度，最初样式里还有关于旋转的滤镜progid:DXImageTransform.Microsoft.BasicImage(rotation = 2)</div>
+	<div class="set_opacity rotate_filter" id="new_s_o_f">我被$.CSS设置了30%的透明度,最初样式里还有关于旋转的滤镜progid:DXImageTransform.Microsoft.BasicImage(rotation = 2)</div>
+	<!-- <div class="set_opacity" id="new_s_o">我是没设置透明度的div</div> -->
+	<p id="s_o_p" class="result"></p>
+</div>
+
+<div class="box">
+	<h3>#9 $.css.getComputedStyle( node, 'float' ) vs $.CSS.getStyle( node, 'float' ) : 获取float</h3>
+	<div>
+		<div class="float_left" id="f_l">我是设置了float:left的div</div>
+		<div class="float_right" id="f_r">我是设置了float:right的div</div>
+		<div class="float_none" id="f_n">我是没有设置float的div</div>
+	</div>
+	<p id="f_p" class="result"></p>
+</div>
+
+<div class="box">
+	<h3>#10 $.css.setStyle( node, 'float' ) : 设置float</h3>
+	<div>
+		<div class="float_left" id="s_f_l">我是被$.css设置了float:left的div</div><div class="clear"></div>
+		<div class="float_right" id="s_f_r">我是被$.css设置了float:right的div</div><div class="clear"></div>
+		<div class="float_none" id="s_f_n">我是被$.css设置float:none的div</div>
+	</div>
+	<div>
+		<div class="float_left" id="n_f_l">我是被$.css设置了float:left的div</div><div class="clear"></div>
+		<div class="float_right" id="n_f_r">我是被$.css设置了float:right的div</div><div class="clear"></div>
+		<div class="float_none" id="n_f_n">我是被$.css设置float:none的div</div>
+	</div>
+	<p id="s_f_p" class="result"></p>
+</div>
+<div class="box">
+	<h3>#11 $.css.setStyle( node, 'background-position' ) : 设置background-position</h3>
+	<div>
+        <div id="test11_1" style="height:48px;width:48px;background:url(img/qq.png) no-repeat 0 0"></div>
+        <div>被设置background-position之前</div>
+        <div id="test11_2" style="height:48px;width:48px;background:url(img/qq.png) no-repeat 0 0"></div>
+        <div>被设置background-position之后($.css.setStyle($('test11_2'),'background-position','-24px -24px');)</div>
+        <div id="test11_3" style="height:48px;width:48px;background-image:url(img/qq.png); background-repeat:no-repeat;background-position: 0 0"></div>
+        <div>这是我期望的</div>
+	</div>
+	<p id="s_f_p" class="result"></p>
+</div>
+
+<!-- <div class="console_board">
+	<div id="msg"></div>
+	<textarea id="command_input"></textarea>
+	<button id="execute_btn">执行</button>
+</div> -->
+
+</div>
+<script type="text/javascript" src="simple.js"></script>
+<script type="text/javascript" src="css_my.js"></script>
+<script type="text/javascript">
+/*
+//命令行模拟
+$.e.add($('execute_btn'), 'click', function(){
+	var value = $('command_input').value;
+	(new Function(value))();
+});
+function log( msg ){
+	$('msg').innerHTML = msg;
+}
+
+function getP( node ){
+	return node.getElementsByTagName('p')[0];
+}
+*/
+//返回比较结果的字符串
+function compare( css, CSS ){
+	return '$.css: '+ css + '<br/> $.CSS: '+CSS
+}
+
+var css = $.css ,
+	CSS = $.CSS ;
+
+var TestCase = {
+	//获取宽、高度
+	widthAndHeight: function(){
+		//备注：getWidth - jquery: outerWidth
+		//备注：getHeight = jquery: outerHeight
+		var node = $('whd');
+		
+		var cssResult = 'getWidth:'+css.getWidth(node) +', getClientWidth:'+ css.getClientWidth(node) + ', getHeight:'+ css.getHeight(node)+ ', getClientHeight:'+ css.getClientHeight(node);
+
+		//var CSSResult = 'getWidth:'+CSS.getWidth(node) +', getClientWidth:'+ CSS.getClientWidth(node) + ', getHeight:'+ CSS.getHeight(node)+ ', getClientHeight:'+ CSS.getClientHeight(node);
+		
+		$('whr').innerHTML = compare(cssResult, cssResult);
+	},
+	//切换显示、隐藏
+	toggleShow: function(){
+		$.e.add($('hideShowBtn'), 'click', function(){
+			var node = $('hideShowDiv');
+			if(CSS.isShow(node)){
+				CSS.hide(node);
+			}else{
+				CSS.show(node);
+			}
+			$('hideShowResult').innerHTML = CSS.isShow(node);	
+		});
+	},
+	//获取宽度
+	autoWidth: function(){
+		$('a_w_p').innerHTML = compare( css.getWidth( $('a_w')), CSS.getWidth( $('a_w')) );
+	},
+	//获取高度
+	autoHeight: function(){
+		$('a_h_p').innerHTML = compare( css.getHeight( $('a_h')), CSS.getHeight( $('a_h')) );
+	},
+	//margin为auto
+	marginAuto: function(){
+		$('m_a_p').innerHTML = compare( css.getComputedStyle( $('m_a'), 'margin-right' ), CSS.getComputedStyle( $('m_a'), 'margin-right' ) );
+	},
+	//获取透明度
+	getOpacity: function(){
+		$('g_o_p').innerHTML = compare( css.getComputedStyle( $('g_o'), 'opacity' ), CSS.getComputedStyle( $('g_o'), 'opacity' ) );
+	},
+	//设置透明度
+	setOpacity: function(){
+		css.setStyle( $('old_s_o'), 'opacity', '0.3' );
+		CSS.setStyle( $('new_s_o'), 'opacity', '0.3' );
+		
+		css.setStyle( $('old_s_o_f'), 'opacity', '0.3' );
+		CSS.setStyle( $('new_s_o_f'), 'opacity', '0.3' );
+	},
+	//获取float
+	getFloat: function(){
+		var one = css.getComputedStyle( $('f_l'), 'float' ) + ', ' + css.getComputedStyle( $('f_r'), 'float' ) +',' + css.getComputedStyle( $('f_n'), 'float' );
+		var two = CSS.getComputedStyle( $('f_l'), 'float' ) + ', ' + CSS.getComputedStyle( $('f_r'), 'float' ) +',' + CSS.getComputedStyle( $('f_n'), 'float' ) 
+		$('f_p').innerHTML = compare( one, two );
+	},
+	//设置float
+	setFloat: function(){
+		css.setStyle( $('s_f_l'), 'float', 'left');
+		css.setStyle( $('s_f_r'), 'float', 'right');
+		css.setStyle( $('s_f_n'), 'float', 'none');
+
+		CSS.setStyle( $('n_f_l'), 'float', 'left');
+		CSS.setStyle( $('n_f_r'), 'float', 'right');
+		CSS.setStyle( $('n_f_n'), 'float', 'none');
+	},
+	//获得字体大小
+	getFontSize: function(){
+		$('font_em_p').innerHTML = compare( css.getComputedStyle( $('font_em'), 'font-size' ), CSS.getStyle($('font_em'),'font-size') );
+	},
+    //设置背景位置
+    setBackgroundPosition: function(){
+        $.css.setStyle($('test11_2'),'background-image','none');
+        $('test11_3').style.backgroundImage='none';
+    }
+};
+
+TestCase.widthAndHeight();
+TestCase.toggleShow();
+TestCase.getFontSize();
+
+//width或height或auto为guto
+TestCase.autoWidth();
+TestCase.autoHeight();
+TestCase.marginAuto();
+
+//opacity相关
+TestCase.getOpacity();
+TestCase.setOpacity();
+
+//float相关
+TestCase.getFloat();
+TestCase.setFloat();
+
+//font-size相关
+TestCase.getFontSize();
+//background-position相关
+TestCase.setBackgroundPosition();
+
+/*
+
+var node = $('font_em');
+node.style.left = '1em';
+log( node.style.pixelLeft )
+
+
+var node = $('font_em');
+node.runtimeStyle.left = '4em';
+node.style.left = '2em';
+log( node.style.pixelLeft );
+
+var node = $('hello');
+node.runtimeStyle.left = '4em';
+var left = node.style.left;
+node.style.left = '2em';
+log( node.style.pixelLeft );
+node.style.left = left;
+
+var node = $('hello');
+node.runtimeStyle.left = '200px';
+var left = node.style.left;
+node.style.left = '2em';
+log( node.style.pixelLeft );
+node.style.left = left;
+
+*/
+
+</script>
+</html>

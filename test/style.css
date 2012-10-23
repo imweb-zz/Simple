@@ -1,0 +1,36 @@
+*{ padding: 0; margin: 0; font-size: 12px; line-height: 26px;}
+h1,h2,h3,h4,h5,h6{ font-weight: bold;}
+h1{ font-size: 28px; line-height: 42px;}
+h3{ font-size: 20px; line-height: 32px; font-weight: bold; color: red;}
+
+.console_board{
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	background: #fff;
+	border: 2px solid #ccc;
+}
+.console_board textarea{
+	width: 300px;
+	height: 150px;
+}
+
+.clear{ clear: both;}
+.result{ font-size:14px; line-height: 26px; color: blue;}
+.auto_width{ width: auto; background: #eee;}
+
+.auto_height_container{ height: 20px; background: #eee;}
+.auto_height{ height: auto;}
+
+.margin_auto{ width: 400px; margin-right: auto;}
+
+.get_opacity{ filter:alpha(opacity=30); opacity:0.3; background:#ddd;}
+.set_opacity{ background: #ccc; }
+.rotate_filter{ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation = 2); background: green;}
+
+.float_left{ float: left;}
+.float_right{ float: right;}
+.float_none{ float: none;}
+
+.font_px{ font-size: 12px; position: relative;}
+.font_em{ font-size: 2em;}
